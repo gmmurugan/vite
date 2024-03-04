@@ -27,9 +27,9 @@ export default function StopWatch() {
     }
     return( 
     <>
-    <h3>timestamp : {timeInSeconds.toFixed(2)} </h3> 
-    <button onClick={()=>handleTimer()}> Start Timer </button>
-    <button onClick={()=>setStartTime(null)}> Stop Timer </button>
+    <h3>Seconds : {timeInSeconds.toFixed(2)} </h3> 
+    <button style={{color: 'green'}}onClick={()=>handleTimer()}> Start Timer </button>
+    <button style={{color: 'red'}} onClick={()=>setStartTime(null)}> Stop Timer </button>
 
     </>)
 }
